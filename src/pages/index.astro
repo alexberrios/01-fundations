@@ -1,4 +1,6 @@
 ---
+const name = 'Alex Berríons Espinoza'
+const title = 'Astro Home page'
 
 ---
 
@@ -8,9 +10,13 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{title}</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>{name}</h1>
+		<p>
+			Momento actual: {new Date().toLocaleString()}
+		</p>
+
 	</body>
 </html>
