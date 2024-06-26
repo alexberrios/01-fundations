@@ -1,22 +1,15 @@
 ---
-const name = 'Alex Berríons Espinoza'
+import MainLayout from "../layouts/MainLayout.astro"
+
+const name = 'Alex Berríos Espinoza'
 const title = 'Astro Home page'
 
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
+<MainLayout title={title}>
 		<h1>{name}</h1>
 		<p>
 			Momento actual: {new Date().toLocaleString()}
 		</p>
 
-	</body>
-</html>
+		<h2>Prueba</h2>
+</MainLayout>
