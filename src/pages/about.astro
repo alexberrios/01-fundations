@@ -1,4 +1,5 @@
 ---
+import CustomTitle from "../components/CustomTitle.astro"
 import MainLayout from "../layouts/MainLayout.astro"
 
 const title = 'About'
@@ -9,6 +10,13 @@ const title = 'About'
 
     <h3>Prueba en about</h3>
 
-
+    <CustomTitle title="Custom title" />
 
 </MainLayout>
+
+<!-- <style is:global> -->
+<style>
+    h1{
+        color: red;
+    }
+</style>
